@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300&family=Poppins:wght@400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #272a31;
+  background: #f8f9f9;
+}
+
+.header-wrapper {
+  max-width: 900px;
+  background: #f8f9f9 url(../images/headerimg.svg);
+  padding: 0.7em 1.2em 0.7em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-mobile {
+  display: flex;
+  margin: 24px;
+}
+
+.menu-link {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.menu-link i {
+  font-size: 30px;
+}
+
+.nav-mobile-popup {
+  display: none;
+}
+
+.headline {
+  max-width: 900px;
+  padding: 0.7em 1.2em 0.7em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline h3 {
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0.5em;
+  color: #ec4542;
+}
+
+.headline h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #ec4542;
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+
+.headline-description {
+  font-size: 20px;
+  padding: 1em;
+  font-weight: 200;
+  border: white 5px solid;
+  line-height: 34px;
+  background: #f8f9f9;
+}
+
+.headline-date {
+  font-weight: 700;
+  color: #565656;
+  margin: 10px;
+}
+
+main {
+  background: #272a31 url(../images/dots.svg);
+  color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program-title {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin: 24px;
+}
+
+.program-title::after {
+  content: '';
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 0.5em;
+  width: 1em;
+  height: 1px;
+  background: #ec4542;
+}
+
+main table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.program {
+  display: flex;
+  align-items: center;
+  background-color: #454850;
+  opacity: 0.8;
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+
+.program td {
+  padding: 1em;
+}
+
+.program td i {
+  font-size: 32px;
+  margin: 5px;
+  color: white;
+}
+
+.program-head {
+  width: 30%;
+  color: #ec4542;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.program-description {
+  width: 50%;
+  color: white;
+  font-size: 0.8em;
+}
+
+.join-program {
+  padding: 2em 2em;
+  margin: 2em;
+  background: #ec4542;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+}
