@@ -247,6 +247,10 @@ main {
   text-align: justify;
 }
 
+.speakers-btn {
+  display: none;
+}
+
 .nav-desktop {
   display: none;
 }
@@ -424,6 +428,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .speakers-btn {
+    display: none;
   }
 
   .partners {
