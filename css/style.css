@@ -473,14 +473,14 @@ main {
   }
 
   .footer-logo {
-    width: 30%;
     display: flex;
     flex-direction: row;
     font-size: 34px;
     font-weight: 600;
+    margin: 20px;
   }
 
   .footer-logo i {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
