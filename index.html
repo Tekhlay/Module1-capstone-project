@@ -12,17 +12,43 @@
 <body>
     <header class="header-wrapper">
         <nav class="nav-bar">
+            <div class="nav-desktop">
+                <div class="header-top">
+                    <ul class="menu-bar-top">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="">English</a></li>
+                        <li><a href="">My Page</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="header-bottom">
+                    <div class="heder-list">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo_ccglobal.png" alt="Logo"></a>
+                        </div>
+                        <ul class="menu-bar-bottom">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="about.html">Program</a></li>
+                            <li><a href="about.html">Join</a></li>
+                            <li><a href="about.html">Sponsor</a></li>
+                            <li><a href="about.html">News</a></li>
+                            <li><a class="active" href="about.html">CC Campaign</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="nav-mobile">
                 <button class="menu-link" type="button"><i class="fa fa-bars"></i></button>
                 <div class="nav-mobile-popup">
-                    <button class="close-popup">&times;</button>
+                    <p class="close-popup">&times;</p>
                     <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Program</a></li>
-                        <li><a href="">Join</a></li>
-                        <li><a href="">Sponsor</a></li>
-                        <li><a href="">News</a></li>
-                        <li><a href="">CC Campaign</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">Program</a></li>
+                        <li><a href="about.html">Join</a></li>
+                        <li><a href="about.html">Sponsor</a></li>
+                        <li><a href="about.html">News</a></li>
+                        <li><a href="about.html">CC Campaign</a></li>
                     </ul>
                 </div>
             </div>   
@@ -39,36 +65,114 @@
             <p>@Addis Ababa, Ethiopia, Near to CMC building 05 flour 4</p>
         </div>
     </header>
-    <main>
+    <main class="main">
         <h2 class="program-title">Main Program</h2>
-        <table border="0">
-            <tr class="program">
-                <td><i class="fa fa-book-reader"></i></td>
-                <td class="program-head">Lecture</td>
-                <td class="program-description">Listen to the speakers from various countries about the message of sharing and opening.</td>
-            </tr>
-            <tr class="program">
-                <td><i class="fa fa-chalkboard-teacher"></i></td>
-                <td class="program-head">CC Exihibtion</td>
-                <td class="program-description">Appreciate various creations applying to CC license of artistis, organized from Art Center Nabi</td>
-            </tr>
-            <tr class="program">
-                <td><i class="fa fa-comments"></i></td>
-                <td class="program-head">Forum</td>
-                <td class="program-description">Have the time to share your toughts and opinions for each topic.</td>
-            </tr>
-            <tr class="program">
-                <td><i class="fa fa-chalkboard"></i></td>
-                <td class="program-head">Workshop</td>
-                <td class="program-description">Try creating your own work using open source license rather than just watching.</td>
-            </tr>
-            <tr class="program">
-                <td><i class="fa fa-globe"></i></td>
-                <td class="program-head">CC Ignite</td>
-                <td class="program-description">Get opportunities to network with  CC affilates around the world, also after the summit.</td>
-            </tr>
-        </table>
+        <div class="main-card">
+            <div class="program">
+                <p><i class="fa fa-book-reader"></i></p>
+                <p class="program-head">Lecture</p>
+                <p class="program-description">Listen to the speakers from various countries about the message of sharing and opening.</p>
+            </div>
+            <div class="program">
+                <p><i class="fa fa-chalkboard-teacher"></i></p>
+                <p class="program-head">CC Exihibtion</p>
+                <p class="program-description">Appreciate various creations applying to CC license of artistis, organized from Art Center Nabi</p>
+            </div>
+            <div class="program">
+                <p><i class="fa fa-comments"></i></p>
+                <p class="program-head">Forum</p>
+                <p class="program-description">Have the time to share your toughts and opinions for each topic.</p>
+            </div>
+            <div class="program pr-4">
+                <p><i class="fa fa-chalkboard"></i></p>
+                <p class="program-head">Workshop</p>
+                <p class="program-description">Try creating your own work using open source license rather than just watching.</p>
+            </div>
+            <div class="program">
+                <p><i class="fa fa-globe"></i></p>
+                <p class="program-head">CC Ignite</p>
+                <p class="program-description">Get opportunities to network with  CC affilates around the world, also after the summit.</p>
+            </div>
+        </div>
         <button class="join-program" type="button">Join CC global summit 2022</button>
+        <a class="See-the-whole" href="">SEE THE WHOLE PROGRAM</a>
     </main>
+    <section class="featured-programs">
+        <h2 class="featured-title">Featured Speakers</h2>
+        <div class="feature-container">
+            <div class="featured-card-head">
+                <div class="feature-card">
+                    <img src="images/speaker1.png" alt="Speaker 1">
+                    <div class="speaker-detail">
+                        <h2 class="speaker-name">Yochai Benkler</h2>
+                        <p class="speaker-status">  Berkman Professor of Enterpreanurial Legal Studies of Harvard Law School</p>
+                        <p class="speaker-profile">Benlder studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="images/speaker2.png" alt="Speaker 1">
+                    <div class="speaker-detail">
+                        <h2 class="speaker-name">Kilnam Chon</h2>
+                        <p class="speaker-status"></p>
+                        <p class="speaker-profile">Kinam Chon helped bring the Internet to Asia and is an outspoken advocate for the open web and digital com mons. In 2012, he was inducted into the inaugural class of the Internet Society's (SOC) Internet Hall of Fame.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-card-head">
+                <div class="feature-card">
+                    <img src="images/speaker3.png" alt="Speaker 1">
+                    <div class="speaker-detail">
+                        <h2 class="speaker-name">SohYeong Noh</h2>
+                        <p class="speaker-status">Director of Art Centre Nabl and a board member of CC Korea</p>
+                        <p class="speaker-profile">As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="images/speaker4.png" alt="Speaker 1">
+                    <div class="speaker-detail">
+                        <h2 class="speaker-name">Julia Leda</h2>
+                        <p class="speaker-status">President of Young Pirates of Europe</p>
+                        <p class="speaker-profile">European ingetration, political democracy and participa tion of youth through online as her major condern, Reda's report outlining potential changes to EU copyright law was approved by the Parliament in July</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-card-head">
+                <div class="feature-card">
+                    <img src="images/speaker5.png" alt="Speaker 1">
+                    <div class="speaker-detail">
+                        <h2 class="speaker-name">JLila Tretikov</h2>
+                        <p class="speaker-status">Executive Director of the Wikimedia Foundation</p>
+                        <p class="speaker-profile">Lila Tretikov is the Executive Director of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia Wikipedia is freely available in 290 languag es and used by nearly half a billion people around the world every month</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="images/speaker6.png" alt="Speaker 1">
+                    <div class="speaker-detail">
+                        <h2 class="speaker-name">JRyan Merkley</h2>
+                        <p class="speaker-status">CEO of Creative Commons, ex COO of the Mozilla Foundation</p>
+                        <p class="speaker-profile">Ryan had been leading open-source projects at the Mozilla Foundation such as the open source move ment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <h2 class="partner-title">Partners</h2>
+        <ul class="partner-list">
+            <li>Mozilla</li>
+            <li>Google</li>
+            <li>NAVER</li>
+            <li>daumkakao</li>
+            <li><i class="fab fa-airbnb">airbnb</i></li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">
+            <i class="fa fa-closed-captioning"></i>
+            <p>creative commons korea</p>
+        </div>
+        <p>2015 Creative Commons Korea Some Rights Reserved</p>
+    </footer>
 </body>
+<script src="js/index.js"></script>
 </html>
