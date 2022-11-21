@@ -14,7 +14,7 @@ body {
 .header-wrapper {
   max-width: 900px;
   background: #f8f9f9 url(../images/headerimg.svg);
-  padding: 0.7em 1.2em 0.7em;
+  background-size: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -168,13 +168,17 @@ main {
 }
 
 .logo {
-  border: 2px #d3d3d3 solid;
+  height: 75px;
+  border: 0px #d3d3d3 solid;
   padding: 1em;
-  margin-top: 2em;
-  margin-bottom: 2em;
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .privious-event {
@@ -365,7 +369,7 @@ footer {
     list-style-type: none;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 50px;
+    padding-right: 130px;
   }
 
   .menu-bar-top a {
@@ -394,6 +398,10 @@ footer {
     list-style-type: none;
   }
 
+  .menu-bar-bottom li {
+    padding-right: 30px;
+  }
+  
   .menu-bar-bottom a {
     font-size: 16px;
     font-weight: 200;

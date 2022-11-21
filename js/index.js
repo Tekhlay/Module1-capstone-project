@@ -1,9 +1,9 @@
 const menubar = document.querySelector('.nav-mobile-popup');
 const closebtn = document.querySelector('.close-popup');
 const menuLink = document.querySelector('.menu-link');
-const FeatureSpeaker = document.querySelector('.featured-programs');
-// const btnspeak = document.querySelector('.speakers-btn');
-// const screensize = window.matchMedia('(max-width: 767px)');
+const FeatureSpeaker = document.querySelector('.feature-container');
+const btnspeak = document.querySelector('.speakers-btn');
+
 
 menuLink.addEventListener('click', () => {
   menubar.style.display = 'flex';
@@ -19,7 +19,7 @@ const adddata = [
     img: 'images/speaker1.png',
     name: 'Yochai Benkler',
     status: 'Berkman Professor of Enterpreanurial Legal Studies of Harvard Law School',
-    desc: 'speaker-profile">Benlder studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
+    desc: 'Benlder studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
   },
   {
     id: 1,
@@ -58,96 +58,53 @@ const adddata = [
   },
 ];
 const speakerData = (x) => `
-<div class="featured-card-head">
-    <div class="feature-card">
-        <img src=${adddata[x].img} alt=${adddata[x].name}>
-        <div class="speaker-detail">
-            <h2 class="speaker-name">${adddata[x].name}</h2>
-            <p class="speaker-status">${adddata[x].status}</p>
-            <p class="speaker-profile">${adddata[x].desc}</p>
-        </div>
-    </div>
-    <div class="feature-card">
-        <img src=${adddata[x].img} alt=${adddata[x].name}>
-        <div class="speaker-detail">
-            <h2 class="speaker-name">${adddata[x].name}</h2>
-            <p class="speaker-status">${adddata[x].status}</p>
-            <p class="speaker-profile">${adddata[x].desc}</p>
-        </div>
-    </div>
-</div>
-<div class="featured-card-head">
-<div class="feature-card">
 <img src=${adddata[x].img} alt=${adddata[x].name}>
 <div class="speaker-detail">
-    <h2 class="speaker-name">${adddata[x].name}</h2>
-    <p class="speaker-status">${adddata[x].status}</p>
-    <p class="speaker-profile">${adddata[x].desc}</p>
-    </div>
+  <h2 class="speaker-name">${adddata[x].name}</h2>
+  <p class="speaker-status">${adddata[x].status}</p>
+  <p class="speaker-profile">${adddata[x].desc}</p>
 </div>
-<div class="feature-card">
-<img src=${adddata[x].img} alt=${adddata[x].name}>
-<div class="speaker-detail">
-    <h2 class="speaker-name">${adddata[x].name}</h2>
-    <p class="speaker-status">${adddata[x].status}</p>
-    <p class="speaker-profile">${adddata[x].desc}</p>
-    </div>
-</div>
-</div>
-<div class="featured-card-head">
-<div class="feature-card">
-<img src=${adddata[x].img} alt=${adddata[x].name}>
-<div class="speaker-detail">
-    <h2 class="speaker-name">${adddata[x].name}</h2>
-    <p class="speaker-status">${adddata[x].status}</p>
-    <p class="speaker-profile">${adddata[x].desc}</p>
-    </div>
-</div>
-<div class="feature-card">
-<img src=${adddata[x].img} alt=${adddata[x].name}>
-<div class="speaker-detail">
-    <h2 class="speaker-name">${adddata[x].name}</h2>
-    <p class="speaker-status">${adddata[x].status}</p>
-    <p class="speaker-profile">${adddata[x].desc}</p>
-    </div>
-</div>
-</div>`;
+`;
 
-// const displaytwo = () => {
-//     FeatureSpeaker.innerHTML = ' ';
-//     for (let i = 0; i < 2; i += 1) {
-//         const speaker = document.createElement('div');
-//         speaker.classList.add('feature-container');
-//         speaker.innerHTML = speakerData(i);
-//         FeatureSpeaker.appendChild(speaker);
-//     }
-//   };
-//   const displayAll = () => {
-//     FeatureSpeaker.innerHTML = ' ';
-for (let i = 0; i < speakerData.length; i += 1) {
-  const speaker = document.createElement('div');
-  speaker.className = 'feature-container';
-  speaker.innerHTML = speakerData(i);
-  FeatureSpeaker.appendChild(speaker);
+const displaytwo = () => {
+    for (let i = 0; i < 2; i += 1) {
+        const speaker = document.createElement('div');
+        speaker.classList.add('feature-card');
+        speaker.innerHTML = speakerData(i);
+        FeatureSpeaker.appendChild(speaker);
+    }
+  };
+const displayAll = () => {
+  FeatureSpeaker.innerHTML = ' ';
+  for (let i = 0; i < Object.keys(adddata).length; i += 1) {
+    const speaker = document.createElement('div');
+    speaker.classList.add('feature-card');
+    speaker.innerHTML = speakerData(i);
+    FeatureSpeaker.appendChild(speaker);
+  }
+};
+
+btnspeak.addEventListener('click', () => {
+  const regex = /MORE/;
+  const flag = regex.test(btnspeak.textContent);
+  if (flag) {
+    btnspeak.innerHTML = 'LESS <i class="fas fa-chevron-up"></i>';
+    displayAll();
+  }
+  else {
+    btnspeak.innerHTML = 'MORE <i class="fas fa-chevron-down"></i>';
+    displaytwo();
+  }
+});
+
+function myscreen(x) {
+  if (x.matches) { 
+    displaytwo();
+  }
+  else {
+    displayAll();
+  }
 }
-//   };
-//   btnspeak.addEventListener('click', () => {
-//     const regex = /MORE/;
-//     const flag = regex.test(btnspeak.textContent);
-//     if (flag) {
-//         btnspeak.innerHTML = 'LESS <i class="fas fa-chevron-up"></i>';
-//         displayAll();
-//     }
-//     else {
-//         btnspeak.innerHTML = 'MORE <i class="fas fa-chevron-down"></i>';
-//         displaytwo();
-//     }
-//   });
-//   screensize.addListener = (e) => {
-//     if (e.matches) {
-//         displaytwo();
-//     }
-//     else {
-//         displayAll();
-//     }
-//   };
+const x = window.matchMedia("(max-width: 768px)");
+myscreen(x);
+x.onchange(myscreen);
