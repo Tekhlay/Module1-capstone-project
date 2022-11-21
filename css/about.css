@@ -169,7 +169,7 @@ main {
 
 .logo {
   height: 75px;
-  border: 0px #d3d3d3 solid;
+  border: 0 #d3d3d3 solid;
   padding: 1em;
   display: flex;
   justify-content: center;
@@ -401,7 +401,7 @@ footer {
   .menu-bar-bottom li {
     padding-right: 30px;
   }
-  
+
   .menu-bar-bottom a {
     font-size: 16px;
     font-weight: 200;

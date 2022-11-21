@@ -4,7 +4,6 @@ const menuLink = document.querySelector('.menu-link');
 const FeatureSpeaker = document.querySelector('.feature-container');
 const btnspeak = document.querySelector('.speakers-btn');
 
-
 menuLink.addEventListener('click', () => {
   menubar.style.display = 'flex';
 });
@@ -67,13 +66,13 @@ const speakerData = (x) => `
 `;
 
 const displaytwo = () => {
-    for (let i = 0; i < 2; i += 1) {
-        const speaker = document.createElement('div');
-        speaker.classList.add('feature-card');
-        speaker.innerHTML = speakerData(i);
-        FeatureSpeaker.appendChild(speaker);
-    }
-  };
+  for (let i = 0; i < 2; i += 1) {
+    const speaker = document.createElement('div');
+    speaker.classList.add('feature-card');
+    speaker.innerHTML = speakerData(i);
+    FeatureSpeaker.appendChild(speaker);
+  }
+};
 const displayAll = () => {
   FeatureSpeaker.innerHTML = ' ';
   for (let i = 0; i < Object.keys(adddata).length; i += 1) {
@@ -90,21 +89,19 @@ btnspeak.addEventListener('click', () => {
   if (flag) {
     btnspeak.innerHTML = 'LESS <i class="fas fa-chevron-up"></i>';
     displayAll();
-  }
-  else {
+  } else {
     btnspeak.innerHTML = 'MORE <i class="fas fa-chevron-down"></i>';
     displaytwo();
   }
 });
 
 function myscreen(x) {
-  if (x.matches) { 
+  if (x.matches) {
     displaytwo();
-  }
-  else {
+  } else {
     displayAll();
   }
 }
-const x = window.matchMedia("(max-width: 768px)");
+const x = window.matchMedia('(max-width: 768px)');
 myscreen(x);
 x.onchange(myscreen);

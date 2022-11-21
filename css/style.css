@@ -85,7 +85,7 @@ body {
 
 .logo {
   height: 75px;
-  border: 0px #d3d3d3 solid;
+  border: 0 #d3d3d3 solid;
   padding: 1em;
   display: flex;
   justify-content: center;
@@ -180,6 +180,11 @@ main {
   padding: 1em;
 }
 
+.speakers-btn i {
+  color: #ec4542;
+  padding: 9px;
+}
+
 .program p i {
   font-size: 32px;
   margin: 5px;
@@ -272,11 +277,6 @@ main {
   color: #272a31;
   font-size: 16px;
   font-weight: 300;
-}
-
-.speakers-btn i {
-  color: #ec4542;
-  padding: 9px;
 }
 
 .nav-desktop {
@@ -434,7 +434,7 @@ main {
   }
 
   .feature-card {
-    width:90%;
+    width: 90%;
     display: flex;
     align-items: center;
   }
@@ -507,7 +507,7 @@ main {
   .footer-logo i {
     font-size: 2em;
   }
-  
+
   .footer-logo p {
     font-weight: 800;
   }
