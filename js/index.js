@@ -67,7 +67,7 @@ const speakerData = (x) => `
 
 const displaytwo = () => {
   for (let i = 0; i < 2; i += 1) {
-    const speaker = document.createElement('div');
+    const speaker = document.createElement('article');
     speaker.classList.add('feature-card');
     speaker.innerHTML = speakerData(i);
     FeatureSpeaker.appendChild(speaker);
