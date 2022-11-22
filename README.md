@@ -18,7 +18,7 @@
 
 ## Video Explanation
 
-- for video description [Click Here](https://www.loom.com/share/5b6e453f9076459ab65d9c8eb6472a09)
+- for video description [Click Here](https://www.loom.com/share/f02b4e57a46f4a449ad0af3736bc7227)
 
 ### Deployment
 
