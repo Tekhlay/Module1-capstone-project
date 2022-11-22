@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Higher level online Bootcamp for Digital transformation">
     <title>Conae Technology</title>
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/e06c5cb839.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,11 +15,11 @@
             <div class="nav-desktop">
                 <div class="header-top">
                     <ul class="menu-bar-top">
-                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="">English</a></li>
-                        <li><a href="">My Page</a></li>
-                        <li><a href="">Logout</a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">Logout</a></li>
                     </ul>
                 </div>
                 <div class="header-bottom">
@@ -28,7 +28,7 @@
                             <a href="index.html"><img src="images/conalogo.png" alt="Logo"></a>
                         </div>
                         <ul class="menu-bar-bottom">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a class="active" href="index.html">Home</a></li>
                             <li><a href="about.html">Program</a></li>
                             <li><a href="about.html">Join</a></li>
                             <li><a href="about.html">Sponsor</a></li>
@@ -53,39 +53,44 @@
                 </div>
             </div>   
         </nav>
-        <div class="headline">
-            <h3>"Hello Digital World"</h3>
-            <h1>CONAE TECHNOLOGY INTERNATIONAL BOOTCAMP CENTER</h1>
-            <P class="headline-description">
+        <div class="container">
+            <article class="txt-primary">"Hello Digital World"</article>
+            <article class="txt-secondary">CONAE TECHNOLOGY INTERNATIONAL BOOTCAMP CENTER</article>
+            <p class="txt-description">
                 The Global Summit brings together the community of experts, academics, and activists who comprise the Creative Commons affiliate network in a different country every two years.
-
-This year, we hope to expand our invitation list including organizations and individuals who want to work with us on shared projects that advance the cause of the Commons, free culture and open knowledge.
-
-So if you're active and engaged in the worlds of open content and knowledge-free software advocates, Wikipedians, Open Knowledge. galleries, libraries, museums, archives, governments and foundations, lawyers, and activists - we hope you'll consider joining us this year to build a stronger, more vibrant commons together.
-            </P>
-            <p class="headline-contact">Please contact us per Email for any further questions about CC Global Summit 2015!</p>
-            <a class="contact-link" href="">ccsummit2015@cckorea.org</a>
+                This year, we hope to expand our invitation list including organizations and individuals who want to work with us on shared projects that advance the cause of the Commons, free culture and open knowledge.
+                So if you're active and engaged in the worlds of open content and knowledge-free software advocates, Wikipedians, Open Knowledge. galleries, libraries, museums, archives, governments and foundations, lawyers, and activists - we hope you'll consider joining us this year to build a stronger, more vibrant commons together.
+            </p>
+            <p class="headline-contact">Please contact us per Email for any further questions about Conae tech!</p>
+            <a class="contact-link" href="">conaetech@et.org</a>
         </div>
     </header>
-    <main>
-        <h2 class="abt-title">Conae Tech Global Summit 2022 Logo</h2>
-        <hr/>
-        <p class="abt-description">The logo of CC Global Summit 2015 was decided through the logo competition from 8. June to 7. July.</p>
-        <img class="logo" src="images/conalogo.png" alt="">
-    </main>
+    <section class="abt">
+        <article class="abt-container">
+            <h2 class="abt-title">Conae Tech Global Summit 2022 Logo</h2>
+            <p class="abt-description">
+                The logo of Conaetech global Summit 2020 was decided through the logo competition from 8. June to 7. July. After
+                online public voting and Selection Committee's judging process, the logo from Hadush won the prize.
+                After consultation with Mr. Hadush we optimized the prize-winning-logo for this year's summit as following:
+            </p>
+            <img class="abt-logo" src="images/conalogo.png" alt="Logo">
+        </article>
+    </section>
     <section class="privious-event">
-        <h2 class="past-event-title">See the past Conae Tech Global summits</h2>
-        <p class="previuous-event-description">Take a look at the last two CC Global summits wich took place in Beonus Aires and in Warsaw.</p>
-        <div class="event-card">
-            <div class="event-card1">
-                <h2>2021</h2>
-                <p>Conae tech Global summit in Addis Ababa</p>
+        <article class="container-article">
+            <h2 class="past-event-title">See the past Conae Tech Global summits</h2>
+            <p class="previuous-event-description">Take a look at the last two Conae Tech Global summits wich took place in Addis Ababa and in Mekelle.</p>
+            <div class="event-card">
+                <div class="event-card1">
+                    <h2>2021</h2>
+                    <p>Conae tech Global summit in Addis Ababa</p>
+                </div>
+                <div class="event-card2">
+                    <h2>2020</h2>
+                    <p>Conae tech Global summit in Mekelle</p>
+                </div>
             </div>
-            <div class="event-card2">
-                <h2>2020</h2>
-                <p>Conae tech Global summit in Mekelle</p>
-            </div>
-        </div>
+        </article>
     </section>
     <section class="partner">
         <h2 class="partner-titile">Partner</h2>
@@ -99,13 +104,13 @@ So if you're active and engaged in the worlds of open content and knowledge-free
             </ul>
         </div>
     </section>
-    <footer>
-        <div class="footer-logo">
+    <section class="abt-footer">
+        <div class="abt-footer-logo">
             <i class="fa fa-closed-captioning"></i>
             <p>creative commons tech</p>
         </div>
         <p>2022 Creative Commons tech Some Rights Reserved</p>
-    </footer>
+    </section>
     <script src="js/index.js"></script>
 </body>
 </html>
