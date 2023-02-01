@@ -14,7 +14,10 @@
 - Install Git in your local machine
 - Go to the repository page.
 - Press the "Code" button and copy the repo link.
-- Finally, Clone it using git command git clone (https://github.com/Tekhlay/Module1-capstone-project.git)
+- Finally, Clone it using git command 
+```sh
+git clone https://github.com/Tekhlay/Module1-capstone-project.git
+```
 
 ## Video Explanation
 
